@@ -19,6 +19,7 @@ public class ListForecastAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
     private List<DummyForecast> listData = new ArrayList<>();
 
+    // constructor
     public ListForecastAdapter(List<DummyForecast> listData) {
         this.listData = listData;
     }
