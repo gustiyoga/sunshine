@@ -3,111 +3,12 @@
 
     <item
         is-multidex="true"
-        jar="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_ecd1f8201f4f3fd088b88e9cd678a1e48e1c1dd0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_f518b4fb8fba40fb893c861ee17ef98b5b311e21\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\exploded-aar\com.jakewharton\butterknife\8.5.1\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="19f281a785ca0eb5f6799fc7bf7ca199a9ca1e8b">
-        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.jakewharton-butterknife-8.5.1_01f1d1678061d42fb0526ef1c943959a4132fd72\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_e6fa20414d552d315a5a806abfd56f42dda0d134\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
-        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.1.0_149af54db3302341e87c66825c4d7436cf6f70d6\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="729ad4d2a6bdb7257517f03303bb60d2382dbf70">
-        <dex dex="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_14ae11ec22d2bc1bbab4fd1724dc37a115194fe4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_1df61f9317faded52b38f21d36964e6da71d28e4\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_367e83990f803a87f710665e59c0c598201d8e03\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
-        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.1.0_0da17bc3699d929945dbdf8ee532c8243e4b17e0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_27e9edf8b1c360e0625a78278d1a4126a65101db\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jar="C:\Users\Yopie\.android\build-cache\e82df4e9f7a08239c5ec4a68b8a9c1737b1f1b35\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_556e2f46e3a8f22e6005580611205bbc109276f0\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
-        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.1.0_68d92634f96ec974b121c78b08c8cf869e0d7db8\classes.dex" />
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e28c5b2e7c190dc742cc9c5d426c7df5bd6aa156\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -115,26 +16,8 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="9fed3862f91a192c44e4286ca95181dfaadf13dd">
-        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7a444f660ec58502815305932ecf6a9cd0d82c52\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.1.0_22af48f55a06349741341b0e95564049218f9b4f\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_00bfa36c8fef2bdf5dd50ea26a2f5929c4f5eca7\classes.dex" />
+        sha1="bd016a26882da05514c73d618402fb64698cee80">
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7a444f660ec58502815305932ecf6a9cd0d82c52\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -147,30 +30,66 @@
     </item>
     <item
         is-multidex="true"
+        jar="C:\Users\Yopie\.android\build-cache\35c97f6dd31a06d5ea0f1d76a9c58116bdc1d63e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_86fc8da793aad56b4564615076636cf89be2c75f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yopie\.android\build-cache\b6f6f9036199145105899b945c4186468c61392f\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ffeb60a8376989b900c30621d3e17c9981446382\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="C:\Users\Yopie\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.1.0\support-annotations-25.1.0.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="64cb6b229a8bdfd907bc8dd46839a0053e4c018d">
-        <dex dex="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_9178f0f72d2df8069256eccfd0b04afa1fc92571\classes.dex" />
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.1.0_9178f0f72d2df8069256eccfd0b04afa1fc92571\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.1.0\jars\classes.jar"
+        jar="C:\Users\Yopie\.android\build-cache\ce8d47692176b5e059696dfe6bb1b69d19709518\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="aee64634871d88a419d59eb743c1258a60f19700">
-        <dex dex="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.1.0_d93a01c1d3802ddf5098325c98bb7171eed3ffb0\classes.dex" />
+        sha1="2a53c4f3518116b8c6aee0e477233f0f7da8616f">
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_18932831fe9826282287a867d57cc29fa441797b\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.1.0\jars\classes.jar"
+        jar="C:\Users\Yopie\.android\build-cache\4afb22ab42f4c149d397a4fc570c0ae785ad7370\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="e79aa3d9a16f8c9f16377c0608de70a8f31e5d80">
-        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.1.0_8b43dfbe198885379adb8a537235de6d1a0668b9\classes.dex" />
+        sha1="19f281a785ca0eb5f6799fc7bf7ca199a9ca1e8b">
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_84d47414bf89e861e4ef572d8ee7ebbf893998c5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yopie\.android\build-cache\10a3b1673e60a4708f4ca34d5bd52dd43539c3c6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="0a0ef86b7fa568a52bf6214a0326ca1f1d618da7">
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e3f5c675b7fed16961d6e4f8b65872910b20ee6f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yopie\.android\build-cache\5c34237f63f89b873f4a6a466949d080b4130e75\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_b459271efcdb5c93941840518c1e5f06d7fef7f7\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -178,62 +97,44 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="b640ea662a006daed08dff4bcbe0e039e66e141e">
-        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_16601dd5cf561810ef3a7bb7407241df7d7cc7b4\classes.dex" />
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_16601dd5cf561810ef3a7bb7407241df7d7cc7b4\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.1.0\jars\classes.jar"
+        jar="C:\Users\Yopie\.android\build-cache\dd8b8426626b5a48e72839abb3b91e36f0f385a8\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.1.0_180676f362d35a1b6e0f56c0154a62a9d4ed1821\classes.dex" />
+        sha1="aee64634871d88a419d59eb743c1258a60f19700">
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_c9e46721f0dc0a7dec1adcf377397c1464baf83f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="87cf0fb186a172315cd1eb57cc2a0aa4a65376ef">
-        <dex dex="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_19ce7c64eea8ec51355ba933a5fa797cc3810ffd\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jar="C:\Users\Yopie\.android\build-cache\7cf17820b7a88c24f3599553ea77782cfe871eb5\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_94ab3e48543dd5cafc47b8d82640a2496d2e5831\classes.dex" />
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_8f6ad4fd5f759f4e00b52c3186618a115f4b5cd2\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.1.0\jars\classes.jar"
+        jar="C:\Users\Yopie\.android\build-cache\c8183dd772e967706de199d82bff0338f492cf58\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="6fb6ac3e8d3b9013819920d9ea11f3803c4c0033">
-        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.1.0_a31d9101781ce4b3eb1bdec5c924a55d89ae6858\classes.dex" />
+        sha1="1630658fbc2d222b988603c27b4a4249586fbfe7">
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_61db6088824f21666b170b85038c82a8cc8cc68a\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.1.0\jars\classes.jar"
+        jar="C:\Users\Yopie\.android\build-cache\bab6c5132be58e9bc0286243dd1a86f13762101a\output\jars\classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
         sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
-        <dex dex="C:\Users\Yopie\AndroidStudioProjects\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.1.0_ee3c73853cd0699ead075e8b2a6f3fa2dcb6f7d9\classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.1.0\jars\classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.1"
-        sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
-        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.1.0_5c49a7ebf2877d79a6ed28ee3c08c1592209b739\classes.dex" />
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_116402fa890407d5541578749f1eca949c6dcad7\classes.dex" />
     </item>
 
 </items>

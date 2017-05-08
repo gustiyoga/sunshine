@@ -31,7 +31,7 @@ public class ForecastItemViewHolder extends RecyclerView.ViewHolder{
     public void bind(final DummyForecast data){
         tvDay.setText(data.getDay());
         tvForecast.setText(data.getForecast());
-        tvMaxTemp.setText(String.valueOf(data.getMaxTemp()));
-        tvMinTemp.setText(String.valueOf(data.getMinTemp()));
+        tvMaxTemp.setText(String.valueOf(data.getMaxTempDegree()));
+        tvMinTemp.setText(String.valueOf(data.getMinTempDegree()));
     }
 }

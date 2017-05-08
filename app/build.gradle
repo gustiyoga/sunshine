@@ -33,4 +33,7 @@ dependencies {
     // butter knife
     compile 'com.jakewharton:butterknife:8.5.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+
+    // volley
+    compile 'com.android.volley:volley:1.0.0'
 }

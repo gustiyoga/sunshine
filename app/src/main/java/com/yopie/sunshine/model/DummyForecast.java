@@ -51,4 +51,12 @@ public class DummyForecast {
     public void setMinTemp(int minTemp) {
         this.minTemp = minTemp;
     }
+
+    public String getMaxTempDegree(){
+        return String.valueOf(maxTemp) + "\u00b0";
+    }
+
+    public String getMinTempDegree(){
+        return String.valueOf(minTemp) + "\u00b0";
+    }
 }
