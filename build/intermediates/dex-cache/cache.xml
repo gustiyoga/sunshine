@@ -16,7 +16,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="bd016a26882da05514c73d618402fb64698cee80">
+        sha1="dc19753fe43fc04270c7fb49060737db964140f9">
         <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_7a444f660ec58502815305932ecf6a9cd0d82c52\classes.dex" />
     </item>
     <item
@@ -45,6 +45,15 @@
         revision="25.0.1"
         sha1="b266c8faa5af72e579b9da36ef35053ffed6ac64">
         <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ffeb60a8376989b900c30621d3e17c9981446382\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yopie\.android\build-cache\591a7c5b1f404c9af8aa3188fa4614efab03a026\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fe8d1d4e5292cd667a7a62d87f27bd2c77d080be\classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -135,6 +144,15 @@
         revision="25.0.1"
         sha1="ca3c7aa31e2726a400a6e552b93cb9f63c9a1e6d">
         <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_116402fa890407d5541578749f1eca949c6dcad7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Yopie\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="C:\Users\Yopie\Documents\Android\SunShine\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.8.0_fa57d490aba81741f96092cd17d64634d6095b23\classes.dex" />
     </item>
 
 </items>
