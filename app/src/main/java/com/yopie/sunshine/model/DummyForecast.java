@@ -6,18 +6,27 @@ package com.yopie.sunshine.model;
 
 public class DummyForecast {
 
+    private String weatherId;
     private String day;
     private String forecast;
     private int maxTemp;
     private int minTemp;
-//    private int weatherId;
 
 
-    public DummyForecast(String day, String forecast, int maxTemp, int minTemp) {
+    public DummyForecast(String weatherID, String day, String forecast, int maxTemp, int minTemp) {
+        this.weatherId = weatherID;
         this.day = day;
         this.forecast = forecast;
         this.maxTemp = maxTemp;
         this.minTemp = minTemp;
+    }
+
+    public String getWeatherId() {
+        return weatherId + ".png";
+    }
+
+    public void setWeatherId(String weatherId) {
+        this.weatherId = weatherId;
     }
 
     public String getDay() {

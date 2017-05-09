@@ -1,10 +1,12 @@
 package com.yopie.sunshine.adapter;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.yopie.sunshine.R;
 import com.yopie.sunshine.model.DummyForecast;
 
@@ -28,7 +30,15 @@ public class ForecastItemViewHolder extends RecyclerView.ViewHolder{
         ButterKnife.bind(this, itemView);
     }
 
-    public void bind(final DummyForecast data){
+    public void bind(final DummyForecast data, Context context){
+        Glide
+                .with(context)
+                .load("http://openweathermap.org/img/w/" + data.getWeatherId())
+                .centerCrop()
+                .placeholder(R.mipmap.ic_launcher)
+                .crossFade()
+                .into(ivWeatherIcon);
+
         tvDay.setText(data.getDay());
         tvForecast.setText(data.getForecast());
         tvMaxTemp.setText(String.valueOf(data.getMaxTempDegree()));

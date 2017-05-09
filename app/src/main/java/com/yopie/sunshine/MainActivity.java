@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity {
     public void getData() {
 
         RequestQueue queue = Volley.newRequestQueue(this);
-        String url ="http://api.openweathermap.org/data/2.5/forecast/daily?q=Denpasar&mode=json&units=metric&cnt=17&APPID=d345e008609693cf4dee4f5245fbbf0d";
+        String APIurl = "http://api.openweathermap.org/data/2.5/forecast/daily?q=Denpasar&mode=json&units=metric&cnt=17&APPID=d345e008609693cf4dee4f5245fbbf0d";
 
         // Persiapan the Request dengan respon JSONObject
-        JsonObjectRequest getRequest = new JsonObjectRequest(Request.Method.GET, url, null,
+        JsonObjectRequest getRequest = new JsonObjectRequest(Request.Method.GET, APIurl, null,
                 new Response.Listener<JSONObject>()
                 {
                     @Override
@@ -72,8 +72,8 @@ public class MainActivity extends AppCompatActivity {
                                     JSONObject weatherObject = weatherArray.getJSONObject(j);
 
                                     String mainWeather = weatherObject.getString("main");
-
-                                    DummyForecast dummyForecast = new DummyForecast(dayName, mainWeather, maxTemp, minTemp);
+                                    String iconWeather = weatherObject.getString("icon");
+                                    DummyForecast dummyForecast = new DummyForecast(iconWeather, dayName, mainWeather, maxTemp, minTemp);
                                     listData.add(dummyForecast);
                                 }
                             }
@@ -98,15 +98,15 @@ public class MainActivity extends AppCompatActivity {
         queue.add(getRequest);
     }
 
-    public void getDummyData(){
-        for (int i = 0; i < 1; i++) {
-            DummyForecast dummyForecast = new DummyForecast("Sunday", "Sunny", 25 + i, 20 + i);
-            listData.add(dummyForecast);
-        }
-    }
+//    public void getDummyData(){
+//        for (int i = 0; i < 1; i++) {
+//            DummyForecast dummyForecast = new DummyForecast("Sunday", "Sunny", 25 + i, 20 + i);
+//            listData.add(dummyForecast);
+//        }
+//    }
 
     private void setupRecyclerview(){
-        adapter = new ListForecastAdapter(listData);
+        adapter = new ListForecastAdapter(listData, this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(adapter);
 //        getDummyData();
