@@ -6,10 +6,10 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
 import com.yopie.sunshine.R;
 import com.yopie.sunshine.model.ListForecast;
 import com.yopie.sunshine.model.WeatherItem;
+import com.yopie.sunshine.util.SunshineWeatherUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -50,13 +50,20 @@ public class ForecastItemViewHolder extends RecyclerView.ViewHolder{
         // get weather index ke 0
         WeatherItem weather = data.getWeather().get(0);
 
-        Glide
-                .with(context)
-                .load("http://openweathermap.org/img/w/" + weather.getWeatherIcon())
-                .centerCrop()
-                .placeholder(R.mipmap.ic_launcher)
-                .crossFade()
-                .into(ivWeatherIcon);
+//        Glide
+//                .with(context)
+//                .load("http://openweathermap.org/img/w/" + weather.getWeatherIcon())
+//                .centerCrop()
+//                .placeholder(R.mipmap.ic_launcher)
+//                .crossFade()
+//                .into(ivWeatherIcon);
+
+        ivWeatherIcon.setImageResource(
+                SunshineWeatherUtils
+                    .getSmallArtResourceIdForWeatherCondition(
+                            weather.getId()
+                    )
+        );
 
         if (position == 0)
             tvDay.setText(data.getTodayReadableTime(position));

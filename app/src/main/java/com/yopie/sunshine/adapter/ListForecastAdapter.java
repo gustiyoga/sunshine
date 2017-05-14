@@ -18,6 +18,7 @@ import java.util.List;
 
 public class ListForecastAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
 
+    // buat deklarasi untuk today sama engga today
     private Context context;
     private List<ListForecast> listData = new ArrayList<>();
 
@@ -29,6 +30,8 @@ public class ListForecastAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        // ntar disini isiin if dari viewType
+
         View itemView = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.row_forecast_item, parent, false);
 
@@ -47,4 +50,5 @@ public class ListForecastAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
         return listData.size();
     }
 
+    // overide getItemViewType, isiin kondisi 1 atau 0
 }
