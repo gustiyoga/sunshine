@@ -13,6 +13,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.yopie.sunshine.adapter.ListForecastAdapter;
 import com.yopie.sunshine.model.DummyForecast;
@@ -29,6 +30,8 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String TAG = MainActivity.class.getSimpleName();
+
     @BindView(R.id.recyclerview) RecyclerView recyclerView;
     ListForecastAdapter adapter;
     private List<DummyForecast> listData = new ArrayList<>();
@@ -41,6 +44,38 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         setupRecyclerview();
+    }
+
+    public void getDataFromApi() {
+
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        String APIurl = "http://api.openweathermap.org/data/2.5/forecast/daily?q=Denpasar&mode=json&units=metric&cnt=17&APPID=d345e008609693cf4dee4f5245fbbf0d";
+
+        Response.Listener<String> responseListener = new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.e(TAG, "onResponse: " + response);
+            }
+        };
+
+        Response.ErrorListener errorListener = new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                if (error != null)
+                    Log.e(TAG, "onErrorResponse: " + error.getMessage());
+                else
+                    Log.e(TAG, "onErrorResponse: Something wrong happened");
+            }
+        };
+
+        StringRequest request = new StringRequest(
+                Request.Method.GET,
+                APIurl,
+                responseListener,
+                errorListener
+        );
+
+        requestQueue.add(request);
     }
 
     public void getData() {
@@ -110,6 +145,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(adapter);
 //        getDummyData();
-        getData();
+//        getData();
+        getDataFromApi();
     }
 }
