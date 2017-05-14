@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.yopie.sunshine.R;
-import com.yopie.sunshine.model.DummyForecast;
+import com.yopie.sunshine.model.ListForecast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,10 +19,10 @@ import java.util.List;
 public class ListForecastAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>{
 
     private Context context;
-    private List<DummyForecast> listData = new ArrayList<>();
+    private List<ListForecast> listData = new ArrayList<>();
 
     // constructor
-    public ListForecastAdapter(List<DummyForecast> listData, Context context) {
+    public ListForecastAdapter(List<ListForecast> listData, Context context) {
         this.listData = listData;
         this.context = context;
     }
@@ -38,8 +38,8 @@ public class ListForecastAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         ForecastItemViewHolder forecastItemViewHolder = (ForecastItemViewHolder) holder;
-        DummyForecast data = listData.get(position);
-        forecastItemViewHolder.bind(data, context);
+        ListForecast data = listData.get(position);
+        forecastItemViewHolder.bind(data, position, context);
     }
 
     @Override

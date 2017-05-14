@@ -8,7 +8,7 @@ public class Temp{
 	private double min;
 
 	@SerializedName("max")
-	private int max;
+	private double max;
 
 	@SerializedName("eve")
 	private double eve;
@@ -17,10 +17,10 @@ public class Temp{
 	private double night;
 
 	@SerializedName("day")
-	private int day;
+	private double day;
 
 	@SerializedName("morn")
-	private int morn;
+	private double morn;
 
 	public void setMin(double min){
 		this.min = min;
@@ -30,11 +30,11 @@ public class Temp{
 		return min;
 	}
 
-	public void setMax(int max){
+	public void setMax(double max){
 		this.max = max;
 	}
 
-	public int getMax(){
+	public double getMax(){
 		return max;
 	}
 
@@ -54,19 +54,19 @@ public class Temp{
 		return night;
 	}
 
-	public void setDay(int day){
+	public void setDay(double day){
 		this.day = day;
 	}
 
-	public int getDay(){
+	public double getDay(){
 		return day;
 	}
 
-	public void setMorn(int morn){
+	public void setMorn(double morn){
 		this.morn = morn;
 	}
 
-	public int getMorn(){
+	public double getMorn(){
 		return morn;
 	}
 
@@ -82,4 +82,12 @@ public class Temp{
 			",morn = '" + morn + '\'' + 
 			"}";
 		}
+
+    public String getMaxTempDegree(){
+        return Math.round(getMax()) + "\u00b0";
+    }
+
+    public String getMinTempDegree(){
+        return Math.round(getMin()) + "\u00b0";
+    }
 }

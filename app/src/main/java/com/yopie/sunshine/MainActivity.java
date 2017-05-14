@@ -15,8 +15,11 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.gson.Gson;
 import com.yopie.sunshine.adapter.ListForecastAdapter;
+import com.yopie.sunshine.model.ApiResponse;
 import com.yopie.sunshine.model.DummyForecast;
+import com.yopie.sunshine.model.ListForecast;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -34,7 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.recyclerview) RecyclerView recyclerView;
     ListForecastAdapter adapter;
-    private List<DummyForecast> listData = new ArrayList<>();
+    private List<DummyForecast> listDataDummy = new ArrayList<>();
+    private List<ListForecast> listWeather = new ArrayList<>();
+    private Gson gson = new Gson();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,6 +60,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 Log.e(TAG, "onResponse: " + response);
+
+                ApiResponse apiResponse = gson.fromJson(response, ApiResponse.class);
+
+                // perulangan untuk object list di json
+                for (ListForecast listForecast : apiResponse.getList()){
+                    listWeather.add(listForecast);
+                }
+
+                adapter.notifyDataSetChanged();
             }
         };
 
@@ -109,7 +123,7 @@ public class MainActivity extends AppCompatActivity {
                                     String mainWeather = weatherObject.getString("main");
                                     String iconWeather = weatherObject.getString("icon");
                                     DummyForecast dummyForecast = new DummyForecast(iconWeather, dayName, mainWeather, maxTemp, minTemp);
-                                    listData.add(dummyForecast);
+                                    listDataDummy.add(dummyForecast);
                                 }
                             }
                             adapter.notifyDataSetChanged();
@@ -141,7 +155,7 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     private void setupRecyclerview(){
-        adapter = new ListForecastAdapter(listData, this);
+        adapter = new ListForecastAdapter(listWeather, this);
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         recyclerView.setAdapter(adapter);
 //        getDummyData();

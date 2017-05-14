@@ -52,10 +52,16 @@ public class WeatherItem{
  	public String toString(){
 		return 
 			"WeatherItem{" + 
-			"icon = '" + icon + '\'' + 
+			"icon = '" + icon + '\'' +
 			",description = '" + description + '\'' + 
 			",main = '" + main + '\'' + 
 			",id = '" + id + '\'' + 
 			"}";
 		}
+
+	public String getWeatherIcon() {
+		return getIcon() + ".png";
+	}
+
+
 }

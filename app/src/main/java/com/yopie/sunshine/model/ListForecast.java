@@ -2,12 +2,16 @@ package com.yopie.sunshine.model;
 
 import com.google.gson.annotations.SerializedName;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
+import java.util.TimeZone;
 
-public class ListItem{
+public class ListForecast {
 
 	@SerializedName("dt")
-	private int dt;
+	private long dt;
 
 	@SerializedName("rain")
 	private double rain;
@@ -33,11 +37,11 @@ public class ListItem{
 	@SerializedName("speed")
 	private double speed;
 
-	public void setDt(int dt){
+	public void setDt(long dt){
 		this.dt = dt;
 	}
 
-	public int getDt(){
+	public long getDt(){
 		return dt;
 	}
 
@@ -108,7 +112,7 @@ public class ListItem{
 	@Override
  	public String toString(){
 		return 
-			"ListItem{" + 
+			"ListForecast{" +
 			"dt = '" + dt + '\'' + 
 			",rain = '" + rain + '\'' + 
 			",temp = '" + temp + '\'' + 
@@ -120,4 +124,21 @@ public class ListItem{
 			",speed = '" + speed + '\'' + 
 			"}";
 		}
+
+	public String getReadableTime(int pos) {
+		if(pos == 1) {
+			return "Tomorrow";
+		} else {
+			Date date = new Date(dt * 1000L);
+			DateFormat format = new SimpleDateFormat("EEEE");
+			format.setTimeZone(TimeZone.getTimeZone("Etc/UTC"));
+			return format.format(date);
+		}
+	}
+
+	public String getTodayReadableTime(int pos) {
+		Date date = new Date(dt * 1000L);
+		DateFormat format = new SimpleDateFormat("MMM dd");
+		return "Today, " + format.format(date);
+	}
 }
