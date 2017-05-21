@@ -1,6 +1,5 @@
 package com.yopie.sunshine.adapter;
 
-import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
@@ -46,10 +45,7 @@ public class ForecastItemViewHolder extends RecyclerView.ViewHolder{
 //        tvMinTemp.setText(String.valueOf(data.getMinTempDegree()));
 //    }
 
-    public void bind(ListForecast data, int position, Context context) {
-        // get weather index ke 0
-        WeatherItem weather = data.getWeather().get(0);
-
+    public void bind(ListForecast data, int position) {
 //        Glide
 //                .with(context)
 //                .load("http://openweathermap.org/img/w/" + weather.getWeatherIcon())
@@ -57,6 +53,10 @@ public class ForecastItemViewHolder extends RecyclerView.ViewHolder{
 //                .placeholder(R.mipmap.ic_launcher)
 //                .crossFade()
 //                .into(ivWeatherIcon);
+
+
+        // get weather index ke 0
+        WeatherItem weather = data.getWeather().get(0);
 
         ivWeatherIcon.setImageResource(
                 SunshineWeatherUtils
@@ -66,7 +66,7 @@ public class ForecastItemViewHolder extends RecyclerView.ViewHolder{
         );
 
         if (position == 0)
-            tvDay.setText(data.getTodayReadableTime(position));
+            tvDay.setText(data.getTodayReadableTime());
         else
             tvDay.setText(String.valueOf(data.getReadableTime(position)));
 

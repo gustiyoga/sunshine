@@ -136,9 +136,21 @@ public class ListForecast {
 		}
 	}
 
-	public String getTodayReadableTime(int pos) {
+	public String getTodayReadableTime() {
 		Date date = new Date(dt * 1000L);
 		DateFormat format = new SimpleDateFormat("MMM dd");
 		return "Today, " + format.format(date);
+	}
+
+	public String getReadableHumidity() {
+		return getHumidity() + " %";
+	}
+
+	public String getReadablePressure() {
+		return Math.round(getPressure()) + " hPa";
+	}
+
+	public String getReadableWindSpeed() {
+		return Math.round(getSpeed()) + " m/sec";
 	}
 }

@@ -1,6 +1,8 @@
 package com.yopie.sunshine;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -48,7 +50,21 @@ public class MainActivity extends AppCompatActivity {
 
         ButterKnife.bind(this);
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) actionBar.setElevation(0); // menghilangkan shadow pada action bar
+
         setupRecyclerview();
+
+        // click listener
+        adapter.setForecastItemClickListener(new ListForecastAdapter.ForecastItemClickListener() {
+            @Override
+            public void onForecastItemClick(ListForecast data, int position) {
+                Intent intentDetail = new Intent(MainActivity.this, DetailActivity.class);
+                intentDetail.putExtra("data", gson.toJson(data)); // mengirim data ke detail activity
+                intentDetail.putExtra("position", position);
+                startActivity(intentDetail);
+            }
+        });
     }
 
     public void getDataFromApi() {
